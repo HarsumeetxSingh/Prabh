@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="back-container">  
+      <div id="main-container-1">
+        <p><h1 id="display"></h1></p>
+        <div id="hearts"> 
+            <a href="https://wa.me/16472397338?text=I%20would%20love%20to%20be%20your%20Valentine.%20Would%20you%3F"><div id="buttons" class="btn-1">
+                <div class="left-heart"></div>
+                <div class="right-heart"></div>
+                <div class="down-heart"></div>
+                <div class="text-heart">Yes</div>
+          </div></a>
+          <div id="buttons" class="btn-2">
+              <div class="left-heart"></div>
+              <div class="right-heart"></div>
+              <div class="down-heart"></div>
+              <div class="text-heart">No</div>
+           </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script>// Get the value from the URL parameter
+        var params = new URLSearchParams(window.location.search);
+        var value = params.get('value');
+
+        // Display the value in the <h1> element
+        document.getElementById("display").textContent = value + ", will you be my Valetine?";</script>
+  </body>
+</html>
